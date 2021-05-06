@@ -36,4 +36,5 @@ class Choice(models.Model):
 class Result(models.Model):
     poll = models.ForeignKey('Poll', on_delete=models.CASCADE)
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
+    question = models.ForeignKey('Question', on_delete=models.CASCADE)
     choice = models.ForeignKey('Choice', on_delete=models.CASCADE)

@@ -7,3 +7,5 @@ admin.site.register(Choice)
 admin.site.register(Poll)
 admin.site.register(Result)
 
+
+
